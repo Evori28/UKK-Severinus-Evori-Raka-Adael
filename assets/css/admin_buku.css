@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 40px;
+    color: #fff;
+}
+
+/* Judul */
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 25px 0 15px;
+    font-weight: 500;
+}
+
+/* ===== FORM TAMBAH BUKU ===== */
+form {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* Input */
+form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+form input:focus {
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+/* Button Tambah */
+form button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* ===== TABEL BUKU ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Header */
+table th {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Data */
+table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover Row */
+table tr:hover {
+    background: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+/* Aksi Link */
+table a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Edit */
+table a[href*="edit"] {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+}
+
+/* Hapus */
+table a[href*="delete"] {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+table a:hover {
+    opacity: 0.85;
+}
+
+/* Link kembali */
+p {
+    margin-top: 20px;
+}
+
+p a {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    transition: 0.3s;
+}
+
+p a:hover {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}

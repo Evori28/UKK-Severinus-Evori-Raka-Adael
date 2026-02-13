@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 40px;
+    color: #fff;
+}
+
+/* Judul */
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Text Selamat Datang */
+p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Container Menu */
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Styling Link Menu */
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Hover Effect */
+a:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Logout khusus */
+a[href*="logout"] {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+a[href*="logout"]:hover {
+    opacity: 0.9;
+}
+
+/* Card Effect (Opsional jika mau wrap semua dalam div) */
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,162 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    overflow: hidden;
+}
+
+/* Animasi Background Glow */
+body::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 70%);
+    top: -150px;
+    right: -150px;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(40px); }
+}
+
+/* Container */
+.login-container {
+    position: relative;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Judul */
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Input & Select */
+.login-container input,
+.login-container select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Placeholder */
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Fokus */
+.login-container input:focus,
+.login-container select:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Dropdown option */
+.login-container select {
+    color: #fff;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover Button */
+.login-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Register Text */
+.login-container p {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.login-container a {
+    color: #ffd369;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+/* ===== CREATOR INFO ===== */
+.creator-info {
+    margin: 40px auto;
+    width: 600px;
+    padding: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.creator-info h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 8px;
+}
+
+.creator-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.creator-info strong {
+    color: #ffcc00;
+}

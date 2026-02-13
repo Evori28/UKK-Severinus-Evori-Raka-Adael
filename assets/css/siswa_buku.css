@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    padding: 40px;
+    color: #fff;
+}
+
+/* Judul */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Header */
+table th {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Table Data */
+table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover Row */
+table tr:hover {
+    background: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+/* Button Pinjam */
+button {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* Link Kembali */
+p {
+    margin-top: 20px;
+}
+
+p a {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    transition: 0.3s;
+}
+
+p a:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+form input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+form button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+form a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
